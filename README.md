@@ -1,41 +1,51 @@
-# sentinel-ai-threat-detection
 # SentinelAI: AI-Powered Threat Simulation Framework
 
-A simulated AI-based threat detection system that processes real-time event streams and detects anomalies using a modular data pipeline.
+A modular, AI-inspired threat detection system that simulates real-time event streams and identifies anomalies using a scalable data pipeline architecture.
 
-##  Features
+## Features
 
-- Real-time event streaming simulation
-- Anomaly detection using threshold-based logic (ML-inspired)
-- Modular pipeline architecture
+- Real-time event streaming simulation (CPU, Memory, Network)
+- Modular anomaly detection system
+- Scalable pipeline design for data processing
 - Simulated PostgreSQL data storage layer
-- Scalable and extensible design
+- Designed for ML integration and cloud deployment
 
 ##  Architecture
 
 The system consists of three main components:
 
 1. **Data Pipeline**
-   - Generates continuous event streams (CPU, Memory, Network)
+   - Continuously generates and processes event streams
 
-2. **Anomaly Detector**
-   - Identifies abnormal patterns based on predefined thresholds
+2. **Anomaly Detection Engine**
+   - Detects abnormal system behavior using rule-based logic
+   - Designed to support ML-based anomaly detection models
 
-3. **Postgres Client (Simulated)**
-   - Stores processed events and detection results
+3. **Database Layer**
+   - Simulates PostgreSQL storage for processed events and results
 
 ##  How It Works
 
-1. Generate event data continuously  
-2. Pass event to anomaly detector  
-3. Detect abnormal patterns  
+1. Generate real-time system events  
+2. Process events through anomaly detection logic  
+3. Identify abnormal patterns  
 4. Store results in database layer  
 
-## 🛠 Tech Stack
+##  Machine Learning Integration
+
+- Current implementation uses threshold-based detection as a baseline
+- Architecture is designed to integrate ML models such as:
+  - Autoencoders
+  - PCA-based anomaly detection
+  - PyTorch-based models (future integration)
+
+##  Tech Stack
 
 - Python
-- Modular Architecture
-- Simulated Streaming Pipeline
+- Modular Pipeline Architecture
+- Data Processing
+- PostgreSQL (simulated)
+- ML-ready design
 
 ## 📂 Project Structure
 src/
@@ -45,16 +55,17 @@ src/
 ├── db/
 │ └── postgres_client.py
 
-## ▶️ How to Run
+##  How to Run
 
 ```bash
 python src/data_pipeline.py
 
- Future Improvements:
+## Future Improvements
 Integrate real PostgreSQL database
-Use PyTorch-based anomaly detection
-Add real-time dashboards (Grafana/Prometheus)
+Implement ML models using PyTorch
+Add monitoring tools (Grafana/Prometheus)
 Deploy using Docker and Kubernetes
-👨‍💻 Author
 
+👨‍💻 Author
 Harsh Raj
+
