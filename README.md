@@ -46,26 +46,35 @@ The system consists of three main components:
 - Data Processing
 - PostgreSQL (simulated)
 - ML-ready design
-
+- 
 ## 📂 Project Structure
+
+```
 src/
-├── data_pipeline.py
-├── model/
-│ └── anomaly_model.py
-├── db/
-│ └── postgres_client.py
+ ├── data_pipeline.py
+ ├── model/
+ │    └── anomaly_model.py
+ ├── db/
+ │    └── postgres_client.py
+tests/
+```
+
 
 ##  How to Run
 
 ```bash
 python src/data_pipeline.py
+```
 
-## Future Improvements
-Integrate real PostgreSQL database
-Implement ML models using PyTorch
-Add monitoring tools (Grafana/Prometheus)
-Deploy using Docker and Kubernetes
+##  Future Improvements
 
-👨‍💻 Author
+- Integrate real PostgreSQL database
+- Implement ML models using PyTorch
+- Add monitoring tools (Grafana/Prometheus)
+- Deploy using Docker and Kubernetes
+
+---
+
+## 👨‍💻 Author
+
 Harsh Raj
-
